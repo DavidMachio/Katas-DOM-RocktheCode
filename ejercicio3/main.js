@@ -38,6 +38,7 @@ const countries2 = [
 
 for (const country2 of countries2) {
 	const div = document.createElement("div");
+	div.className = "foto"
 	const h4 = document.createElement("h4");
 	h4.innerText= country2.title;
 	const img = document.createElement("img");
@@ -57,7 +58,7 @@ document.body.appendChild(deleteButton);
 
 
 deleteButton.addEventListener("click", (event) => {
-	const divs = document.querySelectorAll("div");
+	const divs = document.querySelectorAll(".foto");
 const arrayDivs = Array.from(divs);
 const ultimoElemento = arrayDivs.length - 1;
     if (ultimoElemento >= 0) {
